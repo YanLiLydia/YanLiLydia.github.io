@@ -73,8 +73,10 @@
     .entry-meta { margin-top: 3px; color: var(--muted); font-size: 14px; line-height: 1.6; }
     .entry-description { margin-top: 6px; font-size: 15px; line-height: 1.6; }
     .entry-detail { margin-top: 6px; color: var(--muted); font-size: 14px; }
-    .abstract-toggle { margin-top: 5px; }
-    .abstract-toggle summary { display: inline-flex; align-items: center; min-height: 28px; width: fit-content; color: var(--accent); cursor: pointer; list-style: none; font-size: 14px; }
+    .publication-actions { display: flow-root; margin-top: 6px; font-size: 14px; }
+    .publication-actions > a { float: inline-start; margin-inline-end: 12px; }
+    .publication-actions > a, .abstract-toggle summary { display: inline-flex; align-items: center; min-height: 28px; }
+    .abstract-toggle summary { width: fit-content; color: var(--accent); cursor: pointer; list-style: none; }
     .abstract-toggle summary::-webkit-details-marker { display: none; }
     .abstract-toggle summary:hover, .abstract-toggle[open] summary { color: var(--accent-dark); text-decoration: underline; }
     .abstract-panel { margin-top: 8px; padding-left: 16px; border-left: 2px solid var(--line); color: var(--muted); font-size: 14px; line-height: 1.65; }
@@ -134,13 +136,15 @@
             <p class="entry-meta">Zelong Xu, <strong style="color:var(--ink)">Yan Li</strong>, Wenhe Hu, Xiyang Hu</p>
             <p class="entry-meta">Under review · 2026</p>
             <p class="entry-description">A lightweight representation-alignment method that helps omni-modal models match audio and visual events in time, using timing information already present in video data.</p>
-            <p class="entry-detail"><a href="https://github.com/ZelongXuEric/SyncRA" target="_blank" rel="noopener noreferrer">[Code]</a></p>
-            <details class="abstract-toggle">
-              <summary>[Abstract]</summary>
-              <div class="abstract-panel">
-                <p>Omni-modal models can process both audio and video, but they may connect a spoken event to the wrong visual moment. SyncRA addresses this temporal mismatch by aligning intermediate audio and visual representations from matching time intervals while separating representations from different intervals in the same video. The method uses timing already present in the input, requires no extra annotations, and does not change inference. Evaluations across four open omni-modal models and five public video benchmarks show consistent gains over answer-only fine-tuning, including better responses when audio–visual pairings change.</p>
-              </div>
-            </details>
+            <div class="publication-actions">
+              <a href="https://github.com/ZelongXuEric/SyncRA" target="_blank" rel="noopener noreferrer">[Code]</a>
+              <details class="abstract-toggle">
+                <summary>[Abstract]</summary>
+                <div class="abstract-panel">
+                  <p>Omni-modal models can process both audio and video, but they may connect a spoken event to the wrong visual moment. SyncRA addresses this temporal mismatch by aligning intermediate audio and visual representations from matching time intervals while separating representations from different intervals in the same video. The method uses timing already present in the input, requires no extra annotations, and does not change inference. Evaluations across four open omni-modal models and five public video benchmarks show consistent gains over answer-only fine-tuning, including better responses when audio–visual pairings change.</p>
+                </div>
+              </details>
+            </div>
           </div>
         </article>
       </section>
