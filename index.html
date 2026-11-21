@@ -66,6 +66,7 @@
     .entry-with-media { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; align-items: start; }
     .entry-figure { min-width: 0; padding: 4px; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
     .entry-figure img, .entry-figure video { display: block; width: 100%; height: auto; }
+    .entry-figure video { aspect-ratio: 3 / 2; object-fit: cover; }
     .entry-body { min-width: 0; }
     .entry-title { font-size: 16px; font-weight: 600; line-height: 1.45; }
     .entry-title a { color: inherit; text-decoration: none; }
@@ -153,7 +154,7 @@
         <h2 class="section-title" id="research-title">Current Research</h2>
         <article class="entry entry-with-media">
           <figure class="entry-figure">
-            <video src="generative-ptychography.mp4" poster="generative-ptychography-poster.jpg" width="600" height="600" controls playsinline loop preload="metadata" aria-label="Generative ptychography animation">
+            <video src="generative-ptychography.mp4" poster="generative-ptychography-poster.jpg" width="600" height="400" autoplay muted loop playsinline controls aria-label="Generative ptychography animation">
               <a href="generative-ptychography.mp4">Download the video</a>
             </video>
           </figure>
