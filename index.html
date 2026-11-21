@@ -52,6 +52,9 @@
     .profile-affiliation { margin-top: 5px; }
     .profile-affiliation a { color: inherit; text-decoration: none; }
     .profile-affiliation a:hover { color: var(--accent); text-decoration: underline; }
+    .school-name-end { white-space: nowrap; }
+    .school-crest { display: inline-block; width: auto; height: 1.35em; margin-inline-start: .3em; vertical-align: -.3em; }
+    .profile-affiliation .school-crest { height: 1.75em; vertical-align: -.45em; }
     .profile-links { display: grid; gap: 4px; margin-top: 20px; }
     .profile-links a, .profile-location { display: inline-flex; align-items: center; gap: 9px; min-height: 28px; width: fit-content; color: var(--muted); text-decoration: none; font-size: 14px; }
     .profile-links a:hover { color: var(--accent); text-decoration: underline; }
@@ -109,7 +112,7 @@
       <div class="profile-identity">
         <h1>Yan Li</h1>
         <p class="profile-role">M.A. Student · Research Assistant</p>
-        <p class="profile-affiliation"><a href="https://www.wisc.edu/">University of Wisconsin–Madison</a></p>
+        <p class="profile-affiliation"><a href="https://www.wisc.edu/">University of Wisconsin–<span class="school-name-end">Madison<img class="school-crest" src="uw-madison-crest.svg" width="56" height="87" alt=""></span></a></p>
       </div>
       <nav class="profile-links" aria-label="Contact and documents">
         <span class="profile-location"><span class="link-icon" aria-hidden="true">⌖</span>Madison, WI</span>
@@ -120,9 +123,9 @@
 
     <main id="main" tabindex="-1">
       <section class="intro" aria-label="About Yan Li">
-        <p>I am a master's student in the Department of Mathematics at the <a href="https://www.wisc.edu/">University of Wisconsin–Madison</a>. I work as a research assistant in the <a href="https://cig.ece.wisc.edu">Computational Imaging Group</a> with <a href="https://engineering.wisc.edu/directory/profile/ulugbek-kamilov/">Prof. Ulugbek S. Kamilov</a>.</p>
+        <p>I am a master's student in the Department of Mathematics at the <a href="https://www.wisc.edu/">University of Wisconsin–<span class="school-name-end">Madison<img class="school-crest" src="uw-madison-crest.svg" width="56" height="87" alt=""></span></a>. I work as a research assistant in the <a href="https://cig.ece.wisc.edu">Computational Imaging Group</a> with <a href="https://engineering.wisc.edu/directory/profile/ulugbek-kamilov/">Prof. Ulugbek S. Kamilov</a>.</p>
         <p>My current research studies image denoising with dispatch diffusion models, including diffusion-based approaches to inverse problems. I am interested in making image reconstruction more robust and reliable.</p>
-        <p>Before coming to Wisconsin, I studied applied mathematics and financial engineering at <a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen</a> and worked on computer vision applications in healthcare.</p>
+        <p>Before coming to Wisconsin, I studied applied mathematics and financial engineering at <a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, <span class="school-name-end">Shenzhen<img class="school-crest" src="cuhk-shenzhen-crest.png" width="127" height="100" alt=""></span></a> and worked on computer vision applications in healthcare.</p>
         <p class="current-focus">Current focus: diffusion models for image denoising in engineering applications.</p>
       </section>
 
